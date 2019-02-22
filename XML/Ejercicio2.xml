@@ -1,0 +1,35 @@
+<libreria>
+	<libro>
+		<imagen>Imagen libro</imagen><boton>Ver mas asi</boton>
+		<titulo tipo="Klasikoak(aizkorri)">Dilintxo.Maitagarrien sekretua</titulo>
+		<escritor>Walt Disney Company</escritor> 
+		<fecha-publicacion>06/11/2012</fecha-publicacion>
+		<Precio>13.06€</precio>
+		<tipo>tapa blanda</tipo>
+		<pedido>Haz el pedido en las proximas 3 horas y recibelo el martes, enero 22</pedido>
+		<Stock>Solo hay 1 en Stock. Compralo cuanto antes</Stock>
+		<opciones-de-compra>
+			<tipo>tapa blanda</tipo>
+			<precio>13.06€</precio>
+			<calidad>nuevo</calidad>
+			<num-ofertas>3ofertas</num-ofertas>
+		</opciones-de-compra>
+	</libro>
+	<libro>
+		<imagen>Imagen libro</imagen>
+		<boton>Ver mas asi</boton>
+		<titulo tipo="Ateko Bandan">Bertan goxo</titulo>
+		<escritor>Karlos Linazasoro Izaguirre</escritor> 
+		<fecha-publicacion>09/11/2012</fecha-publicacion>
+		<Precio>9.74€</precio>
+		<tipo>tapa blanda</tipo>
+		<pedido>Haz el pedido en las proximas 3 horas y recibelo el martes, enero 22</pedido>
+		<Stock>Solo hay 4 en Stock. Compralo cuanto antes</Stock>
+		<opciones-de-compra>
+			<tipo>tapa blanda</tipo>
+			<precio>9.74€</precio>
+			<calidad>nuevo</calidad>
+			<num-ofertas>2 ofertas</num-ofertas>
+		</opciones-de-compra>
+	</libro>
+</libreria>

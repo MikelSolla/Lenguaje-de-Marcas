@@ -1,0 +1,44 @@
+/*1*/
+<?xml version="1.0" encoding="UTF-8"?> 
+<persona> 
+  <nombre>Ion</nombre>
+  <DNI>12784259L</DNI>
+</persona>
+<persona>
+  <nombre>Miren</nombre>
+  <DNI>51243021P</DNI> 
+</persona>
+/*BIEN*/
+
+/*2*/
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<texto> Esto es un <negrita>texto</negrita> con formato. </texto> 
+/*BIEN*/
+
+/*3*/
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<texto> Esto es un <negrita><cursiva>texto</negrita> con más</cursiva> formato. </texto>
+/*MAL=*/
+
+/*4*/
+<coche>
+  <marca>Peugeot</marca> 
+	<modelo>308</modelo>
+</coche> 
+/*BIEN*/
+
+/*5*/
+<?xml version="1.0" encoding="UTF-8"?>
+<amigos>
+ 	<amigo direccion="Avenida Gasteiz"> Joseba Oribe</amigo>
+ 	<amigo direccion="Gran Via"> Leire Aguirre</amigo> 
+</amigos>
+/*BIEN*/
+
+/*6*/
+<?xml version="1.0" encoding="UTF-8"?>
+<amigos>
+  <amigo telefono=999999999  telefono=666666666>Joseba Oribe</amigo>
+  <amigo telefono=933333333>Leire Aguirre</amigo>
+</amigos>
+/*MAL=LOS TELEFONO AL SER ATRIBUTOS DEBERIAN DE TENERLOS NUMEROS ENTRE COMILLAS*/

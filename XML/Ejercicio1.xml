@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faltas>
+    <asignatura nombre="matematicas">
+        <clase curso="2A">
+            <persona>
+                <nombre> Ibon Frenández </nombre>
+                <fecha> 12/12/10 </fecha>
+                <hora> 12:00 </hora>
+            </persona>
+            <persona>
+                <nombre> Elisa Ruiz </nombre>
+                <fecha> 18/12/10 </fecha>
+                <hora> 13:00 </hora>
+            </persona>
+        </clase>
+        <clase curso=" 2B">
+            <persona>
+                <nombre>Maite Elkorobarrutia </nombre>
+                <fecha> 15/12/10 </fecha>
+                <hora> 14:00 </hora>
+            </persona>
+        </clase>
+        <clase curso="3A">
+            <persona>
+                <nombre>Miren Luarizaristi </nombre>
+                <fecha> 17/12/10 </fecha>
+            </persona>
+        </clase>
+    </asignatura>
+    <asignatura nombre="Informática">
+        <clase curso="2A ">
+            <persona>
+                <nombre> Jose Alonso </nombre>
+                <fecha> 12/12/10 </fecha>
+                <hora> 12:00 </hora>
+            </persona>
+            <persona>
+                <nombre> Gorka Ruiz </nombre>
+                <fecha> 18/12/10 </fecha>
+                <hora> 11:00 </hora>
+            </persona>
+        </clase>
+        <clase curso="2B">
+            <persona>
+                <nombre> Jokin via </nombre>
+                <fecha> 13/12/10 </fecha>
+                <hora> 09:00 </hora>
+            </persona>
+            <persona>
+                <nombre>Amaia Jaso </nombre>
+                <fecha> 15/12/10 </fecha>
+                <hora> 10:00 </hora>
+            </persona>
+        </clase>
+    </asignatura>
