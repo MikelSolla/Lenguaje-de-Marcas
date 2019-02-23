@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Ejercicio Display</title>
+	
+	<style>
+	
+	/* Remove padding and margin */
+	* {
+	  margin: 0;
+	  padding: 0;
+	  line-height:1.5;
+	}
+
+	/* Font */
+
+	body {
+	  font: "Lucida Grande", "Lucida Sans", "Trebuchet MS", Tahoma, Verdana, sans-serif;
+	}
+
+	/* Main Content */
+	.box{
+	  background: #FFF09E;
+	  border: dashed #CCCCCC 1px;
+	  width: 150px;
+	  height: 100px;
+	  margin: 20px;
+	  display:inline-block;
+	  position:relative;
+	}
+
+	#box-group2 #box3{
+		position: absolute;
+		top: 300px;
+		right:0px;
+	}
+	
+	#box-group3 #box2 span {
+		position: absolute;
+		top:600px;
+		right:0px;
+	}
+	
+	#box-group3 #box2{
+		position: static
+	}
+	
+	#box-group4 .box{
+		display: block;
+	}
+	
+	span{
+		position: absolute;
+		top: 0px;
+		right:0;
+	}
+	</style>
+</head>
+<body>
+	<h1>Ejercicio display y position</h1>
+	<h2>Información necesaria:</h2>
+	<ol>
+		<li>Solo hay que modificar el código CSS de esta misma página. No es necesario tocar HTML.</li>
+		<li>Los span están siempre a 5px de la parte derecha e inferior de las cajas (exceptuando en el 3er ejemplo, que está posicionado respecto a la página)</li>
+		<li>En el segundo ejemplo, la caja está a 300px del borde superior de la pantalla.</li>
+		<li>Si es necesario modifica la clase .box que se te da en el código.</li>
+	</ol>
+	<hr>
+	<h2>Box group 1</h2>
+	<div id="box-group1">
+		<div class="box" id="box1"><span>box1</span></div>
+		<div class="box" id="box2"><span>box2</span></div>
+	  <div class="box" id="box3"><span>box3</span></div>
+	</div>
+	<h2>Box group 2</h2>
+	<div id="box-group2">
+		<div class="box" id="box1"><span>box1</span></div>
+		<div class="box" id="box2"><span>box2</span></div>
+	  <div class="box" id="box3"><span>box3</span></div>
+	</div>
+	<h2>Box group 3</h2>
+	<div id="box-group3">
+		<div class="box" id="box1"><span>box1</span></div>
+		<div class="box" id="box2"><span>box2</span></div>
+	  <div class="box" id="box3"><span>box3</span></div>
+	</div>
+	<h2>Box group 4</h2>
+	<p>Margin collapsing</p>
+	<div id="box-group4">
+		<div class="box" id="box1"><span>box1</span></div>
+		<div class="box" id="box2"><span>box2</span></div>
+	  <div class="box" id="box3"><span>box3</span></div>
+	</div>
+	
+</body>
+</html>
