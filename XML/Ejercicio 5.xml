@@ -1,0 +1,24 @@
+<Pedido fecha="20/02/2012">
+	<Producto>
+		<cortadora-de-cesped codigo="872-AA" tipo="desconocido">
+			<precio>148.95</precio>
+		</cortadora-de-cesped>
+		<Podadoras>
+			<precio codigo="926-FH">7.98</precio>
+		</Podadoras>
+	</Producto>
+	<recogida>
+		<nombre-recogida>Ines Abad</nombre-recogida>
+		<localizacion>
+			<ciudad>Pamplona</ciudad>
+			<direccion codigo-postal="31010">Plaza de la Duquesa 12</direccion>
+		</localizacion>
+	</recogida>
+	<cliente>
+		<nombre-cliente>Ricardo Movilla</nombre-cliente>
+		<localizacion-pago>
+			<ciudad>Vitoria-Gasteiz</ciudad>
+			<direccion codigo-postal="01012">Avenida Gasteiz 56</direccion>
+		</localizacion-pago>
+	</cliente>
+</pedido>
