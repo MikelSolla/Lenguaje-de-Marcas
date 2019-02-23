@@ -1,0 +1,20 @@
+<unidad clave="a">
+	<directorio nombre="aaaaaa" fecha de modificacion="dd/mm/yyyy">
+		<directorio nombre="ccccc" fecha de modificacion="dd/mm/yyyy">
+		</directorio>
+		<fichero nombre="dddddd" fecha de modificacion="dd/mm/yyyy" tamaño="xxx">
+		</fichero>
+	</directorio>
+	<fichero nombre="bbbb" fecha de modificacion="dd/mm/yyyy" tamaño="xxx">
+	</fichero>
+</unidad>
+<unidad clave="b">
+	<directorio nombre="eeee" fecha de modificacion="dd/mm/yyyy">
+		<directorio nombre="gggg" fecha de modificacion="dd/mm/yyyy">
+		</directorio>
+		<fichero nombre="hhhh" fecha de modificacion="dd/mm/yyyy" tamaño="xxx">
+		</fichero>
+	</directorio>
+	<fichero nombre="ffff" fecha de modificacion="dd/mm/yyyy" tamaño="xxx">
+	</fichero>
+</unidad>
