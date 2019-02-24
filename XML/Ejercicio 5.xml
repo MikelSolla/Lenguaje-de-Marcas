@@ -1,12 +1,12 @@
-<Pedido fecha="20/02/2012">
+<Pedido fecha="20/02/2012" urgencia="alta">
 	<Producto>
 		<cortadora-de-cesped codigo="872-AA" tipo="desconocido">
 			<cantidad>1</cantidad>
 			<precio>148.95</precio>
 		</cortadora-de-cesped>
-		<Podadoras>
+		<Podadoras codigo="926-FH">
 			<cantidad>3</cantidad>
-			<precio codigo="926-FH">7.98</precio>
+			<precio>7.98</precio>
 		</Podadoras>
 	</Producto>
 	<recogida>
@@ -14,6 +14,7 @@
 		<localizacion>
 			<ciudad>Pamplona</ciudad>
 			<direccion codigo-postal="31010">Plaza de la Duquesa 12</direccion>
+			<!-- <codigo-postal>31010</codigo-postal> -->
 		</localizacion>
 	</recogida>
 	<cliente>
