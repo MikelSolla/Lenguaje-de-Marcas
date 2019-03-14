@@ -1,0 +1,19 @@
+.item-container {
+  width: 26rem;
+  margin: 2em auto;
+}
+
+.item {
+  background-color: #DDD;
+  padding: 1em;
+  margin-bottom: .2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Arial;
+}
+
+.enlace {
+  background-color: #fff;
+  padding: 4px 6px;
+}
