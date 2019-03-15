@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE agenda SYSTEM "agenda.dtd">
+<agenda>
+</agenda>
+
+<!ELEMENT agenda (nombre, direccion, ciudad, provincia, cod_postal, telefono, fax, email, web, campañia)>
+	<!ELEMENT nombre (#CDATA)>
+	<!ELEMENT direccion (#CDATA)>
+	<!ELEMENT ciudad (#CDATA)>
+	<!ELEMENT provincia (#CDATA)>
+	<!ELEMENT cod_postal (#CDATA)>
+	<!ELEMENT numero (telefono, fax)>
+		<!ELEMENT telefono (#CDATA)>
+		<!ELEMENT fax (#CDATA)>
+	<!ELEMENT email (#CDATA)>
+	<!ELEMENT web (#CDATA)>
+	<!ELEMENT campañia (#CDATA)>

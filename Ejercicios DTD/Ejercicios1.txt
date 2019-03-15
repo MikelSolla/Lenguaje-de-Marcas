@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE listin SYSTEM "listin.dtd">
+<listin>
+    <persona id="ijauregu">
+        <nombre>Ion Jaureguialzo Sarasola</nombre>
+        <email>ijaureguialzo@egibide.org</email>
+        <email>widemos@gmail.com</email>
+        <relacion amigo_de="earbaiza"/>
+    </persona>
+    <persona id="earbaiza">
+        <nombre>Eider</nombre>
+    </persona>
+</listin>
+
+<!ELEMENT listin(persona)+>
+	<!ELEMENT persona (nombre, email *, relacion ?)>
+		<!ELEMENT nombre (#CDATA)>
+		<!ELEMENT email (#CDATA)>
+		<!ELEMENT relacion (#CDATA)>
+		<!ELEMENT id ("1ª letra del nombre + 1ª del apellido, hasta 8 letras") #REQUIRED>
+		<!ELEMENT sexo(hombre|mujer|otros) #IMPLIED>
+		<!ELEMENT relacion (amigo_de, enemigo_de|EMPTY)>
+			<!ELEMENT amigo_de #IMPLIED>
+			<!ELEMENT enemigo_de #IMPLIED>

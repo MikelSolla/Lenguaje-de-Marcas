@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE pedido SYSTEM "pedido.dtd">
+<pedido>
+    <fecha>2012/02/20</fecha>
+    <cuerpo_pedido>
+        <articulo id="872-AA">
+            <nombre>Cortadora de cesped</nombre>
+            <tipo>electrica</tipo>
+            <unidades>1</unidades>
+            <precio>148.95</precio>
+        </articulo>
+        <articulo id="926-FH">
+            <nombre>Podadora de setos</nombre>
+            <tipo>?</tipo>
+            <unidades>3</unidades>
+            <precio>7.98</precio>
+        </articulo>
+    </cuerpo_pedido>
+    <cliente>
+        <nombre>Ricardo Movilla</nombre>
+        <direccion tipo="entrega">
+            <nombre>Inés Abad</nombre>
+            <calle>Plaza de la Duquesa</calle>
+            <numero>12</numero>
+            <cp>31010</cp>
+            <localidad>Pamplona</localidad>
+            <provincia>Nafarroa</provincia>
+        </direccion>
+        <direccion tipo="facturacion">
+            <calle>Avenida de Gasteiz</calle>
+            <numero>56</numero>
+            <cp>01012</cp>
+            <localidad>Vitoria-Gasteiz</localidad>
+            <provincia>Araba</provincia>
+        </direccion>
+    </cliente>
+</pedido>
+
+<!ELEMENT pedido (fecha, cuerpo_pedido, cliente>
+	<!ELEMENT fecha ("2012/02/20")>
+	<!ELEMENT cuerpo_pedido(articulo +)>
+		<!ELEMENT articulo(nombre, tipo, unidades +, precio)>
+			<!ELEMENT nombre (#PCDATA)>
+			<!ELEMENT tipo (gasolina|electrica)>
+				<!ELEMENT gasolina (#PCDATA)>
+				<!ELEMENT electrica (#PCDATA)>
+			<!ELEMENT unidades (#PCDATA)> 
+			<!ELEMENT precio (#PCDATA)>
+	<!ELEMENT cliente (nombre, direccion)>
+		<!ELEMENT nombre(#PCDATA)>
+		<!ELEMENT direccion(nombre, calle, numero, cp, localidad, provincia)>
+			<!ELEMENT nombre(#PCDATA)>
+			<!ELEMENT calle(#PCDATA)>
+			<!ELEMENT numero(#PCDATA)>
+			<!ELEMENT cp (#PCDATA)>
+			<!ELEMENT localidad (#PCDATA)>
+			<!ELEMENT provincia (#PCDATA)>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
