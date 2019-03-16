@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<personas>
+</personas>
+
+<!ELEMENT personas(Nombre, Emails, Parentescos)>
+	<!ELEMENT Nombre(DNI, Edad, Sexo)>
+		<!ELEMENT DNI(#PCDATA)#REQUIRED>
+		<!ELEMENT Edad(#PCDATA)#IMPLIED>
+		<!ELEMENT Sexo("M"|"H")#REQUIRED>
+	<!ELEMENT Emails(#PCDATA)>
+	<!ELEMENT Parentescos("padre de"|"hermano de")*>

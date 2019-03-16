@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE universidad SYSTEM "universidad.dtd">
+<universidad>
+</universidad>
+
+<!ELEMENT universidad(alumnos +,  profesores +, asignatura +)>
+	<!ELEMENT alumno(DNI|pasaporte, nombre, apellido, fecha_nac, cp, telefono, correo)>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE periodico SYSTEM "periodico.dtd">
+<periodico>
+</periodico>
+
+<!ELEMENT periodico(cabecera, portada, seccion +, contraportada)>
+	<!ELEMENT cabecera(nombre_periodico, fecha, lugar_edicion, num_ejemplar , precio)>
+		<!ELEMENT nombre_periodico(#PCDATA)>
+		<!ELEMENT fecha(#PCDATA)>
+		<!ELEMENT lugar_edicion(#PCDATA)>
+		<!ELEMENT num_ejemplar(#PCDATA)>
+		<!ELEMENT precio(#PCDATA)>
+	<!ELEMENT portada(titular, noticias_dia, publicidad)>
+		<!ELEMENT titular(#PCDATA)>
+		<!ELEMENT noticias_dia(#PCDATA)>
+		<!ELEMENT publicidad(#PCDATA)#IMPLIED>
+	<!ELEMENT seccion(internacional, opinion, nacional, cultura, deporte, tv-radio)>
+		<!ELEMENT internacional(#PCDATA)>
+		<!ELEMENT opinion(noticia)>
+			<!ELEMENT noticia(#PCDATA)>
+		<!ELEMENT nacional(noticia)>
+			<!ELEMENT noticia(#PCDATA)>
+		<!ELEMENT cultura(noticia)>
+			<!ELEMENT noticia(#PCDATA)>
+		<!ELEMENT deporte(noticia)>
+			<!ELEMENT noticia(#PCDATA)>
+		<!ELEMENT tv-radio(noticia)>
+			<!ELEMENT noticia(#PCDATA)>
+	<!ELEMENT contraportada(#PCDATA)>

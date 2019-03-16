@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE factura SYSTEM "factura.dtd">
+<factura id="876">
+    <emision>2012-02-28T08:25:02</emision>
+    <vendedor id="12">
+        <nombre>Felix Aguirre Saez</nombre>
+    </vendedor>
+    <cliente id="9878">
+        <nombre>Igor Udiaga Lopez</nombre>
+        <direccion>
+            <via>Calle Alonso Cano, 2, 3º A</via>
+            <cp>41700</cp>
+            <localidad>Deusto</localidad>
+            <provincia>Vizcaya</provincia>
+        </direccion>
+        <telefono num="666111666"/>
+        <telefono num="954666111"/>
+    </cliente>
+    <articulo id="121" iva="18">
+        <denominacion>Silla giratoria modelo C-121</denominacion>
+        <precio>98.23</precio>
+        <cantidad>1</cantidad>
+    </articulo>
+    <articulo id="1124" iva="18">
+        <denominacion>Lámpara mesa con pantalla naranja modelo AK-987</denominacion>
+        <precio>23.12</precio>
+        <cantidad>2</cantidad>
+    </articulo>
+    <descuento>20</descuento>
+</factura>
+
+<!ELEMENT factura(id, emision, vendedor, cliente, articulo+, descuento)>
+	<!ELEMENT id(#PCDATA)#REQUIRED>
+	<!ELEMENT emision(#PCDATA)#REQUIRED>
+	<!ELEMENT vendedor(id, nombre)#REQUIRED>
+		<!ELEMENT id(#PCDATA)#REQUIRED>
+		<!ELEMENT nombre(#PCDATA)#REQUIRED>
+	<!ELEMENT cliente(id, nombre, direccion, telefono?)>
+		<!ELEMENT id(#PCDATA)#REQUIRED>
+		<!ELEMENT nombre(#PCDATA)#REQUIRED>
+		<!ELEMENT direccion(via ,cp, localidad, provincia)#REQUIRED>
+			<!ELEMENT via(#PCDATA)>
+			<!ELEMENT cp(#PCDATA)>
+			<!ELEMENT localidad(#PCDATA)>
+			<!ELEMENT provincia(#PCDATA)>
+		<!ELEMENT telefono(#PCDATA)#IMPLIED>
+	<!ELEMENT articulo(id, iva, denominacion, precio, cantidad)>
+		<!ELEMENT id(#PCDATA)#REQUIRED>
+		<!ELEMENT iva(#PCDATA)#REQUIRED>
+		<!ELEMENT denominacion(#PCDATA)#REQUIRED>
+		<!ELEMENT precio(#PCDATA)#REQUIRED>
+		<!ELEMENT cantidad(#PCDATA)#REQUIRED>
+	<!ELEMENT descuento(#PCDATA)#IMPLIED>
+		
