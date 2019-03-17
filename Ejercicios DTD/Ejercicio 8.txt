@@ -4,4 +4,38 @@
 </universidad>
 
 <!ELEMENT universidad(alumnos +,  profesores +, asignatura +)>
-	<!ELEMENT alumno(DNI|pasaporte, nombre, apellido, fecha_nac, cp, telefono, correo)>
+	<!ELEMENT alumno(DNI|pasaporte, nombre, apellido, fecha_nac, cp, telefono, correo *, asignatura_apuntado, notas +)>
+		<!ELEMENT DNI (#PCDATA)>
+		<!ELEMENT pasaporte(pais_procedencia)>
+			<!ELEMENT pais_procedencia(#PCDATA)>
+		<!ELEMENT nombre(#PCDATA)>
+		<!ELEMENT apellido(#PCDATA)>
+		<!ELEMENT fecha_nac(#PCDATA)>
+		<!ELEMENT cp(#PCDATA)#IMPLIED>
+		<!ELEMENT telefono(#PCDATA)#IMPLIED>
+		<!ELEMENT correo(#PCDATA)#IMPLIED>
+		<!ELEMENT asignatura_apuntado(#PCDATA)>
+		<!ELEMENT notas (NP|SS|AP|NT|SB|MH)>
+			<!ELEMENT NP (#PCDATA)>
+			<!ELEMENT SS (#PCDATA)>
+			<!ELEMENT AP (#PCDATA)>
+			<!ELEMENT NT (#PCDATA)>
+			<!ELEMENT SB (#PCDATA)>
+			<!ELEMENT MH (#PCDATA)>
+	<!ELEMENT profesor(DNI|pasaporte, nombre, apellido, fecha_nac, cp, telefono, correo *, despacho, hora_tutoria, dar_asignaturas)>
+		<!ELEMENT DNI (#PCDATA)>
+		<!ELEMENT pasaporte(pais_procedencia)>
+			<!ELEMENT pais_procedencia(#PCDATA)>
+		<!ELEMENT nombre(#PCDATA)>
+		<!ELEMENT apellido(#PCDATA)>
+		<!ELEMENT fecha_nac(#PCDATA)>
+		<!ELEMENT cp(#PCDATA)#IMPLIED>
+		<!ELEMENT telefono(#PCDATA)#IMPLIED>
+		<!ELEMENT correo(#PCDATA)#IMPLIED>
+		<!ELEMENT despacho(#PCDATA)>
+		<!ELEMENT hora_tutoria(#PCDATA)>
+		<!ELEMENT dar_asignaturas(#PCDATA)>
+	<!ELEMENT asignatura(codigo, num_credito, carrera)>
+		<!ELEMENT codigo(@PCDATA)>
+		<!ELEMENT num_credito (#PCDATA)>
+		<!ELEMENT carrera ("arquitectura")>
