@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<empleados xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="empleados.xsd">
+</empleados>
+
+<xs:element name="empleados" type="tipo-empleado" minOccurs=1>
+
+<xs:complexType name="tipo-empleado">
+<xs:sequence>
+	<xs:element name="codigo" type="tipo-codigo"/>
+	<xs:element name="datos" type="tipo-datos"/>
+	<xs:element name="sueldo" type="tipo-sueldo"/>
+	<xs:element name="comision" type="tipo-comision"/>
+	<xs:element name="director" type="tipo-director"/>
+	<xs:element name="fecha" type="tipo-fecha"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="tipo-codigo" minOccurs=1>
+<xs:restriction base="xs:Integer">
+	<xs:totalDigits value="3"/>
+</xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="tipo-datos">
+<xs:sequence>
+	<xs:element name="nombre" type="tipo-nombre"/>
+	<xs:element name="apellido" type="tipo-apellido"/>
+	<xs:element name="dni" type="tipo-dni"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="tipo-nombre">
+<xs:restriction base="xs:string">
+	<xs:maxInclusive values=20/>
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipo-apellido">
+<xs:restriction base="xs:string">
+	<xs:maxLength values="20"/>
+	<xs:minLength values="2"/>
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="dni">
+<xs:restriction base="xs:string">
+	<xs:pattern values="???"/>
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipo-sueldo">
+<xs:restriction base="xs:int">
+	<xs:maxLength values="500000"/>
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipo-comision">
+<xs:restriction base="xs:int">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
